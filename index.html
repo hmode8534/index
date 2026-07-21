@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>زاد كلين | تنظيف مكيفات وخزانات المياه</title>
+<meta name="description" content="زاد كلين - تنظيف مكيفات سبلت وشباك ودولابي وتنظيف وعزل خزانات المياه الأرضية والعلوية. اتصل الآن 0545126411">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-900:#0a1730;
+    --navy-800:#0f2247;
+    --navy-700:#15305f;
+    --navy-600:#1c3e78;
+    --gold-500:#d4af37;
+    --gold-400:#e8c766;
+    --gold-300:#f3ddA0;
+    --gold-dark:#b3891f;
+    --white:#ffffff;
+    --off-white:#f7f5ef;
+    --whatsapp:#25D366;
+    --shadow-gold: 0 10px 30px rgba(212,175,55,.25);
+    --shadow-navy: 0 10px 30px rgba(10,23,48,.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Tajawal','Cairo',sans-serif;
+    background:var(--off-white);
+    color:var(--navy-900);
+    overflow-x:hidden;
+    padding-bottom:78px;
+  }
+  img{max-width:100%; display:block;}
+  a{text-decoration:none; color:inherit;}
+  ul{list-style:none;}
+  .container{max-width:520px; margin:0 auto; position:relative;}
+
+  /* ===== HEADER ===== */
+  header{
+    background:linear-gradient(180deg,#ffffff 0%, #fbf8ef 100%);
+    padding:22px 18px 34px;
+    text-align:center;
+    position:relative;
+    border-bottom:3px solid var(--gold-500);
+  }
+  .logo-badge{
+    width:92px; height:92px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, var(--navy-600), var(--navy-900));
+    border:4px solid var(--gold-500);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-navy);
+    position:relative;
+  }
+  .logo-badge svg{width:48px; height:48px;}
+  .brand-name{
+    font-family:'Cairo',sans-serif;
+    font-weight:900;
+    font-size:26px;
+    background:linear-gradient(90deg, var(--gold-dark), var(--gold-500) 40%, var(--gold-400) 60%, var(--gold-dark));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    letter-spacing:.5px;
+  }
+  .brand-sub{
+    font-size:13px;
+    color:var(--navy-700);
+    font-weight:600;
+    margin-top:4px;
+  }
+  .city-chip{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:12px;
+    background:var(--navy-900);
+    color:var(--gold-400);
+    font-size:12px;
+    font-weight:700;
+    padding:6px 16px;
+    border-radius:999px;
+    border:1px solid var(--gold-500);
+  }
+  .city-chip svg{width:13px; height:13px; fill:var(--gold-400);}
+
+  /* trust badge floating on header corner */
+  .trust-badge{
+    position:absolute;
+    top:18px; left:18px;
+    background:var(--navy-900);
+    color:var(--gold-400);
+    font-size:10px;
+    font-weight:800;
+    padding:6px 10px;
+    border-radius:8px;
+    border:1px solid var(--gold-500);
+    line-height:1.5;
+    text-align:center;
+  }
+
+  /* wave divider */
+  .wave{display:block; width:100%; line-height:0;}
+  .wave svg{width:100%; height:36px; display:block;}
+
+  /* ===== OFFER BANNER ===== */
+  .offer-banner{
+    background:linear-gradient(120deg, var(--navy-900) 0%, var(--navy-700) 55%, var(--navy-900) 100%);
+    position:relative;
+    padding:22px 18px 26px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .offer-banner::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(212,175,55,.25), transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(212,175,55,.2), transparent 40%);
+  }
+  .offer-banner .tag{
+    display:inline-block;
+    background:var(--gold-500);
+    color:var(--navy-900);
+    font-weight:900;
+    font-size:12px;
+    padding:5px 14px;
+    border-radius:999px;
+    margin-bottom:10px;
+    position:relative;
+    z-index:1;
+  }
+  .offer-title{
+    font-family:'Cairo',sans-serif;
+    font-weight:900;
+    font-size:22px;
+    color:var(--white);
+    position:relative; z-index:1;
+    line-height:1.5;
+  }
+  .offer-title span{color:var(--gold-400);}
+  .offer-sub{
+    color:#cdd9ef;
+    font-size:13px;
+    margin-top:8px;
+    position:relative; z-index:1;
+    font-weight:500;
+  }
+
+  /* ===== SERVICE CARDS ===== */
+  .section{padding:26px 16px 8px;}
+  .section-title{
+    font-family:'Cairo',sans-serif;
+    font-weight:800;
+    font-size:19px;
+    color:var(--navy-900);
+    text-align:center;
+    margin-bottom:4px;
+    position:relative;
+  }
+  .section-title::after{
+    content:"";
+    display:block;
+    width:56px; height:3px;
+    background:var(--gold-500);
+    margin:10px auto 0;
+    border-radius:2px;
+  }
+  .section-lead{
+    text-align:center;
+    color:#5b6478;
+    font-size:13px;
+    margin:10px 0 18px;
+  }
+
+  .service-card{
+    background:var(--white);
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:16px;
+    box-shadow:0 6px 20px rgba(15,34,71,.08);
+    border:1px solid #eee6cf;
+    position:relative;
+    overflow:hidden;
+  }
+  .service-card::before{
+    content:"";
+    position:absolute; top:0; right:0;
+    width:6px; height:100%;
+    background:linear-gradient(180deg, var(--gold-500), var(--gold-dark));
+  }
+  .service-top{
+    display:flex; align-items:center; gap:12px;
+    margin-bottom:12px;
+  }
+  .service-icon{
+    flex-shrink:0;
+    width:52px; height:52px;
+    border-radius:14px;
+    background:linear-gradient(145deg, var(--navy-700), var(--navy-900));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 10px rgba(10,23,48,.25);
+  }
+  .service-icon svg{width:26px; height:26px; stroke:var(--gold-400);}
+  .service-name{
+    font-family:'Cairo',sans-serif;
+    font-weight:800;
+    font-size:16.5px;
+    color:var(--navy-900);
+  }
+  .service-desc{
+    font-size:12.5px;
+    color:#66708a;
+    margin-top:2px;
+  }
+  .price-row{
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--off-white);
+    border-radius:12px;
+    padding:10px 14px;
+    margin-top:6px;
+    border:1px dashed var(--gold-500);
+  }
+  .price-label{font-size:12.5px; font-weight:700; color:var(--navy-800);}
+  .price-value{
+    font-family:'Cairo',sans-serif;
+    font-weight:900;
+    font-size:20px;
+    color:var(--gold-dark);
+  }
+  .price-value small{font-size:12px; font-weight:700; color:var(--navy-700);}
+  .service-note{
+    font-size:11.5px;
+    color:#8b93a8;
+    margin-top:8px;
+    text-align:center;
+  }
+
+  /* ===== FEATURES ===== */
+  .features-box{
+    background:var(--white);
+    border-radius:18px;
+    padding:20px 18px;
+    box-shadow:0 6px 20px rgba(15,34,71,.08);
+    border-right:5px solid var(--gold-500);
+  }
+  .features-list li{
+    display:flex; align-items:flex-start; gap:10px;
+    padding:10px 0;
+    border-bottom:1px dashed #e7e2d2;
+    font-size:14px;
+    font-weight:600;
+    color:var(--navy-800);
+  }
+  .features-list li:last-child{border-bottom:none;}
+  .features-list svg{
+    flex-shrink:0;
+    width:20px; height:20px;
+    margin-top:2px;
+  }
+
+  /* ===== CONTACT SECTION ===== */
+  .contact-section{
+    margin:30px 16px;
+    background:linear-gradient(135deg, var(--navy-900), var(--navy-700));
+    border-radius:20px;
+    padding:28px 20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:var(--shadow-navy);
+  }
+  .contact-section::before{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(circle at 80% 0%, rgba(212,175,55,.25), transparent 50%);
+  }
+  .contact-section h3{
+    font-family:'Cairo',sans-serif;
+    color:var(--white);
+    font-size:19px;
+    font-weight:800;
+    position:relative; z-index:1;
+  }
+  .contact-section p{
+    color:#c9d4ec;
+    font-size:13px;
+    margin-top:6px;
+    position:relative; z-index:1;
+  }
+  .phone-display{
+    display:inline-block;
+    margin-top:16px;
+    font-family:'Cairo',sans-serif;
+    font-size:24px;
+    font-weight:900;
+    color:var(--gold-400);
+    letter-spacing:1px;
+    direction:ltr;
+    position:relative; z-index:1;
+  }
+  .cta-row{
+    display:flex; gap:10px;
+    margin-top:18px;
+    position:relative; z-index:1;
+  }
+  .btn{
+    flex:1;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:13px 10px;
+    border-radius:12px;
+    font-weight:800;
+    font-size:14px;
+    transition:transform .15s ease;
+  }
+  .btn:active{transform:scale(.96);}
+  .btn svg{width:18px; height:18px;}
+  .btn-whatsapp{background:var(--whatsapp); color:var(--white);}
+  .btn-call{background:var(--gold-500); color:var(--navy-900);}
+
+  /* ===== SIDE FLOATING BUTTONS ===== */
+  .side-fab{
+    position:fixed;
+    left:14px;
+    bottom:100px;
+    display:flex; flex-direction:column; gap:12px;
+    z-index:999;
+  }
+  .fab{
+    width:52px; height:52px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 16px rgba(0,0,0,.25);
+    animation:pulse 2.4s infinite;
+    position:relative;
+  }
+  .fab svg{width:24px; height:24px;}
+  .fab-whatsapp{background:var(--whatsapp);}
+  .fab-whatsapp svg{fill:var(--white);}
+  .fab-call-gold{background:var(--gold-500); animation-delay:.3s;}
+  .fab-call-gold svg{fill:var(--navy-900);}
+  .fab-call-navy{background:var(--navy-900); border:2px solid var(--gold-500); animation-delay:.6s;}
+  .fab-call-navy svg{fill:var(--gold-400);}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(212,175,55,.4);}
+    70%{box-shadow:0 0 0 12px rgba(212,175,55,0);}
+    100%{box-shadow:0 0 0 0 rgba(212,175,55,0);}
+  }
+
+  /* ===== BOTTOM STICKY BAR ===== */
+  .bottom-bar{
+    position:fixed;
+    bottom:0; right:0; left:0;
+    background:var(--white);
+    border-top:2px solid var(--gold-500);
+    display:flex;
+    z-index:1000;
+    box-shadow:0 -6px 20px rgba(0,0,0,.12);
+  }
+  .bottom-bar a{
+    flex:1;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 8px;
+    font-weight:800;
+    font-size:14.5px;
+  }
+  .bottom-bar svg{width:19px; height:19px;}
+  .bottom-bar .bb-whatsapp{background:var(--whatsapp); color:var(--white);}
+  .bottom-bar .bb-call{background:var(--navy-900); color:var(--gold-400);}
+
+  /* ===== FOOTER / SIGNATURE ===== */
+  footer{
+    text-align:center;
+    padding:20px 16px 30px;
+    color:#8b93a8;
+    font-size:12px;
+  }
+  footer a{
+    color:var(--gold-dark);
+    font-weight:800;
+  }
+  footer .line{
+    width:40px; height:2px;
+    background:var(--gold-500);
+    margin:0 auto 12px;
+    border-radius:2px;
+  }
+
+  @media (max-width:360px){
+    .brand-name{font-size:22px;}
+    .offer-title{font-size:19px;}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="trust-badge">خدمة<br>موثوقة</div>
+    <div class="logo-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.8">
+        <path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 15a3 3 0 0 0 3 3" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="brand-name">زاد كلين</div>
+    <div class="brand-sub">تنظيف مكيفات وخزانات مياه باحترافية</div>
+    <div class="city-chip">
+      <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+      نخدم مدينتك على مدار الأسبوع
+    </div>
+  </header>
+
+  <div class="wave">
+    <svg viewBox="0 0 500 40" preserveAspectRatio="none"><path d="M0,20 C150,50 350,-10 500,20 L500,00 L0,0 Z" fill="#0a1730"></path></svg>
+  </div>
+
+  <!-- ===== OFFER BANNER ===== -->
+  <div class="offer-banner">
+    <span class="tag">🔥 عروض هذا الأسبوع</span>
+    <div class="offer-title">تنظيف المكيفات و<span>خزانات المياه</span><br>بأفضل الأسعار</div>
+    <div class="offer-sub">فريق متخصص · أدوات معقّمة · نتائج مضمونة</div>
+  </div>
+
+  <div class="wave" style="transform:rotate(180deg);">
+    <svg viewBox="0 0 500 40" preserveAspectRatio="none"><path d="M0,20 C150,50 350,-10 500,20 L500,00 L0,0 Z" fill="#0a1730"></path></svg>
+  </div>
+
+  <!-- ===== SERVICE CARDS ===== -->
+  <div class="section">
+    <div class="section-title">خدماتنا</div>
+    <div class="section-lead">أسعار واضحة بدون أي رسوم خفية</div>
+
+    <!-- خدمة المكيفات -->
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="7" rx="2"/>
+            <path d="M6 13v3M10 13v3M14 13v3M18 13v3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="service-name">تنظيف المكيفات</div>
+          <div class="service-desc">سبلت · شباك · دولابي</div>
+        </div>
+      </div>
+      <div class="price-row">
+        <span class="price-label">أكثر من 7 مكيفات</span>
+        <span class="price-value">25<small> ريال / وحدة</small></span>
+      </div>
+      <div class="service-note">تنظيف فلاتر، مروحة، ومبخرة + تعقيم كامل</div>
+    </div>
+
+    <!-- خدمة الخزانات -->
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 10c0-2 3-4 7-4s7 2 7 4v6c0 2-3 4-7 4s-7-2-7-4v-6z"/>
+            <path d="M5 10c0 2 3 4 7 4s7-2 7-4"/>
+          </svg>
+        </div>
+        <div>
+          <div class="service-name">تنظيف خزانات المياه</div>
+          <div class="service-desc">الخزان الأرضي + الخزان العلوي</div>
+        </div>
+      </div>
+      <div class="price-row">
+        <span class="price-label">عرض الخزانين معًا</span>
+        <span class="price-value">250<small> ريال</small></span>
+      </div>
+      <div class="service-note">تفريغ · تعقيم · شطف · فحص التسريبات</div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <div class="section">
+    <div class="section-title">لماذا زاد كلين؟</div>
+    <div class="features-box">
+      <ul class="features-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          فريق فني مدرّب ومتخصص
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          مواد وأدوات تعقيم آمنة ومعتمدة
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          أسعار واضحة قبل بدء العمل
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          سرعة في الاستجابة والتنفيذ
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          ضمان على جودة الخدمة
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <div class="contact-section">
+    <h3>احجز خدمتك الآن</h3>
+    <p>تواصل معنا مباشرة عبر الاتصال أو واتساب</p>
+    <div class="phone-display">0545126411</div>
+    <div class="cta-row">
+      <a class="btn btn-whatsapp" href="https://wa.me/966545126411" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+        واتساب
+      </a>
+      <a class="btn btn-call" href="tel:0545126411">
+        <svg viewBox="0 0 24 24" fill="#0a1730"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+        اتصال الآن
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER / SIGNATURE ===== -->
+  <footer>
+    <div class="line"></div>
+    تم التصميم بواسطة <a href="https://qotb.agency/" target="_blank" rel="noopener">وكالة قطب</a>
+  </footer>
+
+</div>
+
+<!-- ===== SIDE FLOATING BUTTONS ===== -->
+<div class="side-fab">
+  <a class="fab fab-whatsapp" href="https://wa.me/966545126411" target="_blank" rel="noopener" aria-label="واتساب">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+  </a>
+  <a class="fab fab-call-gold" href="tel:0545126411" aria-label="اتصال">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+  </a>
+  <a class="fab fab-call-navy" href="tel:0545126411" aria-label="اتصال مباشر">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+  </a>
+</div>
+
+<!-- ===== BOTTOM STICKY BAR ===== -->
+<div class="bottom-bar">
+  <a class="bb-whatsapp" href="https://wa.me/966545126411" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.8 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+    تواصل واتساب
+  </a>
+  <a class="bb-call" href="tel:0545126411">
+    <svg viewBox="0 0 24 24" fill="#e8c766"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+    اتصل الآن
+  </a>
+</div>
+
+</body>
+</html>
